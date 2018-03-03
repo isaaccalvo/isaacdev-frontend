@@ -1,0 +1,105 @@
+
+/* body formatting */
+body{
+  padding:0;
+  margin:0;
+  background-color:#B6BDC2;
+  position:relative;
+}
+
+h1,
+h2,
+h3{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* navbar area */
+div#header{
+  height:3.5em;
+  padding-bottom:3.4em;
+}
+.navbar{
+  background-color:#000;
+  color:#fff;
+}
+#header .navbar a{
+  color:#fff;
+}
+#header li.active a{
+  color:#000;
+}
+
+/* terminal animation start */
+#terminal{
+  width:1.2rem;
+  overflow:hidden;
+  height:2rem;
+  margin-top:1.9rem;
+  margin-left:-1.5rem;
+}
+span#terminal{
+  animation-name:blinker;
+  animation-duration:1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count:infinite; 
+}
+@keyframes blinker
+  {
+    0%{opacity:0}
+    50% {opacity:1.0}
+    100%{opacity:0}
+  }
+/* ^^terminal animation end^^ */
+
+/* main content area */
+h2.main-heading{
+  margin:0.5em auto;
+  width: 6em;
+  border-bottom:5px solid #fff;
+  font-weight:bold;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:4.5rem;
+}
+div#main-content{
+  margin-top:1.5em;  
+  padding-bottom:8.6rem;
+}
+div#about-me{
+  margin-top:1em;
+  padding:1rem;
+}
+
+div#portrait{
+  border:2px solid #fff;
+  height:36rem;
+  overflow:hidden;
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+div#portrait img{
+  margin:-1rem 0 0 -2rem;
+}
+#portfolio{
+  padding-top:3em;
+}
+#port-thumbnails{
+  margin-top:2.7em;
+}
+div#port-thumbnails > div{
+  margin-bottom:2em;
+}
+#contact{
+  height:13em;
+  background-color:#fff;
+  border-top:1px solid #ccc;
+}
+div#hr-container hr{
+  border-top:1px solid #777;
+}
+
+
